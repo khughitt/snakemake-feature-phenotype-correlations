@@ -30,26 +30,25 @@ okay if they do not match exactly, as long as their is some subset of shared ids
 present). The first column of each dataset should correspond to row identifiers. All
 input data should be stored using the [feather format](https://github.com/wesm/feather).
 
-Ex.:
+_Example feature data_:
 
-```r
-head(feats)
+|symbol   |   1321N1|     143B|    22RV1| 23132-87|
+|:--------|--------:|--------:|--------:|--------:|
+|A1BG     | 5.542727| 5.245888| 4.753565| 4.069646|
+|A1BG-AS1 | 4.658156| 4.560726| 4.766875| 4.471635|
+|A1CF     | 3.921564| 3.776961| 7.445068| 6.272019|
+|A2M      | 4.236747| 4.504467| 4.824879| 3.731857|
+|A2M-AS1  | 3.535469| 4.376824| 5.714456| 4.850112|
 
-   symbol   1321N1     143B
-     A1BG 5.542727 5.245888
- A1BG-AS1 4.658156 4.560726
-     A1CF 3.921564 3.776961
-      ...
+_Example phenotype data_:
 
-
-head(phenos)
-
-   drug    1321N1     22RV1
- 17-AAG 0.4177000 0.3724600
- AEW541 0.0873750 0.2205000
-AZD0530 0.2557625 0.0262375
-    ...
-```
+|drug      |    1321N1|     22RV1|  42-MG-BA|      5637|
+|:---------|---------:|---------:|---------:|---------:|
+|17-AAG    | 0.4177000| 0.3724600| 0.5990000| 0.4828250|
+|AEW541    | 0.0873750| 0.2205000| 0.1144375| 0.1243550|
+|AZD0530   | 0.2557625| 0.0262375| 0.1621000| 0.1627625|
+|AZD6244   | 0.1107000| 0.3551250| 0.1045875| 0.0647625|
+|Erlotinib | 0.0301375| 0.0256750| 0.0472750| 0.2240250|
 
 Example Usage
 -------------
