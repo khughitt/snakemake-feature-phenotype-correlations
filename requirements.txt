@@ -1,0 +1,7 @@
+conda-forge::python>=3.6
+feather-format
+numba
+numpy
+pandas
+scipy
+snakemake-minimal

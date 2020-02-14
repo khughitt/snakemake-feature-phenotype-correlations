@@ -1,0 +1,18 @@
+#
+# Snakemake feature-phenotype correlation pipeline example config
+#
+name: 'example'
+version: '1.0'
+
+output_dir: '/data/scratch/fcor'
+
+features:
+  rna: '/path/to/rna.feather'
+  methylation: '/path/to/methylation.feather'
+
+phenotypes:
+  drug_response: '/path/to/drug_auc.feather'
+
+methods:
+  - 'pearson'
+  - 'spearman'
